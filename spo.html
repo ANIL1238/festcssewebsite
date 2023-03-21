@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>UDAAN</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/final.ico">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="assets/css/SPO.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+   
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+
+.title {
+	font-family: "Cairo";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	letter-spacing: 1px;
+	line-height:2
+}
+
+h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 80px;
+	margin: 10px 0;
+}
+/* styling my button */
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
+        button {
+ 
+  top:calc(55% - 2em);
+  height:3em;
+  width:9em;
+  border-radius: 30px;
+ 
+  background:#9042f5;
+
+  color:white ;
+  transform-origin:50% 4em;
+  
+ 
+  
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform:rotateZ(0);
+    transform:rotateZ(0);
+  }
+  10% {
+    -webkit-transform:rotateZ(-15deg);
+    transform:rotateZ(-15deg);
+  }
+  20% {
+    -webkit-transition:rotateZ(10deg);
+    transition:rotateZ(10deg);
+  }
+  25% {
+    -webkit-transition:rotateZ(-10deg);
+    transition:rotateZ(-10deg);
+  }
+  30% {
+    -webkit-transition:rotateZ(6deg);
+    transition:rotateZ(6deg);
+  }
+  35% {
+    -webkit-transform:rotateZ(-4deg);
+    transform:rotateZ(-4deg);
+  }
+  40% {
+    transform:rotateZ(7deg);
+  }
+  50% {
+    transform:rotateZ(-6deg);
+  }
+  60% {
+    transform:rotateZ(10deg);
+  }
+  70% {
+    transform:rotateZ(-14deg);
+  }
+  80% {
+    transform:rotateZ(3deg);
+  }
+  90% {
+    transform:rotateZ(-7deg);
+  }
+  100% {
+    -webkit-transition:rotateZ(0);
+    transition:rotateZ(0);
+  }
+}
+
+
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+    </style>
+       
+  
+  
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+
+    
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<!-- Preloader -->
+				
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/lendilogo - Edited.png" alt="" style=" width: 50%; align-items: left;
+                height: auto;">
+            </a>
+           
+         
+
+
+           
+           
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+          <div class="title">
+            <h1>udaan</h1>
+            <h1 style="font-size:25px">COMPUTER SCIENCE AND SYSTEM'S ENGINEERING</h1>
+
+           </div>
+           <br>
+           <br>
+           <br>
+           <br>
+           <center> Sponsored by &nbsp<img src="assets/imgs/ccc.png" alt=""  width="7%"></center>
+
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        
+        </div>  
+        
+            
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    
+
+    <section class="section" id="blog">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center"></h6>
+            <h6 class="section-subtitle mb-5 text-center"></h6>
+    
+            
+        </div>
+    </section>
+    <center> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKAq6mYDdPNaWlHgDiDWbb9PBZdf10kVsnfQH96FNn5ggUuA/viewform"> <button>REGISTER 🚀</button></center> </a> 
+
+
+<br>
+<br>
+    <center>
+    <h3>Co Sponsors</h3>
+
+    <img src="assets/imgs/cafe.png" width="25%">
+    <img src="assets/imgs/bbc - Edited.png" width="35%">
+
+
+</center>
+      <br>
+
+      <hr>
+    <section id="portfolio" class="section portfolio-section">
+      
+        <div class="portfolio-container"> 
+           
+           
+            
+
+            <div class="col-md-6 col-lg-4 advertising new">
+                <div class="portfolio-item">
+                   <img src="assets/imgs/ccl (1).png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                       
+                    <div class="content-holder">
+                        <div class="text-holder">
+                            <h6 class="title">UDAAN</h6>
+                            <p class="subtitle">CRICKET</p>
+                        </div>
+                    </div>    
+                </div>              
+            </div> 
+
+
+            <div class="col-md-6 col-lg-4 advertising new">
+              <div class="portfolio-item">
+               <img src="assets/imgs/vvpp.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                  <div class="content-holder">
+                      <div class="text-holder">
+                          <h6 class="title">UDAAN</h6>
+                          <p class="subtitle">VOLLEY BALL</p>
+                      </div>
+                  </div>    
+              </div>              
+          </div> 
+
+
+          <div class="col-md-6 col-lg-4 advertising new">
+            <div class="portfolio-item">
+               <img src="assets/imgs/grtto.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                       
+                <div class="content-holder">
+                    <div class="text-holder">
+                        <h6 class="title">UDAAN</h6>
+                        <p class="subtitle">THROW BALL</p>
+                    </div>
+                </div>    
+            </div>              
+        </div> 
+           
+
+           
+            
+          
+            
+          
+           
+           
+            
+           
+        </div>   
+    </div>            
+</section>
+<!-- End of portfolio section -->
+
+<!-- Blog Section -->
+
+    <!-- End OF Service Section -->
+
+    <!-- End OF About Section -->
+
+    <!-- Portfolio Section -->
+    
+    <!-- End of portfolio section -->
+
+    <!-- Blog Section -->
+    
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>CHEIF PATRONS</h6>
+          <p class="text-justify"> <i>Sri.P.Madhusudana Rao ,Chairman<br> Sri.P.Srinivasa Rao,Vice Chairman<br>Sri.K.Siva Rama Krishna,Secretary
+            </i></p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Patron</h6>
+          <ul class="footer-links">
+            <li>Dr.V.V.Rama Reddy,Principal</li>
+            <br>
+            <h6>Co-Convener</h6>
+            <li>Mr.G.Prakash Babu,Dean T&P</li>
+
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Convener</h6>
+          <ul class="footer-links">
+            <li>Dr.R.Rajender,HOD</li>
+          </ul>
+        </div>
+        
+      </div>
+
+      <hr>
+    </div>
+    <center> <h6>WITH💝UDAAN</h6></center>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved 
+      
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.instagram.com/vidura_udaan/"><i class="fa fa-instagram"></i></a></li>
+
+          
+            <li><a class="linkedin" href="https://www.linkedin.com/school/lendi-institute-of-engineering-and-technology-liet/"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+    
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="assets/js/leadmark.js"></script>
+    
+
+</body>
+</html>
